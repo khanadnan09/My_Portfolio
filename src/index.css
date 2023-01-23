@@ -1,13 +1,56 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Radio+Canada:wght@300;400;500;600;700&display=swap');
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  font-family: 'Radio Canada', sans-serif;
+  box-sizing: border-box;
+  /* cursor: none !important; */
+}
+/* @media screen and (max-width:992px) {
+  * { 
+    cursor: auto !important;
+  }
+} */
+body{
+background-color: #161C28;
+}
+html {
+  scroll-behavior: smooth;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Track */
+::-webkit-scrollbar-track {
+  background: #091122; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #009952;; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #00572e;; 
+}
+.active{
+  color: #72E2AE !important;
+  background-color: #2C323C;
+  padding: 5px 12px;
+  border-radius: 5px;
+ 
+}
+@media screen and (max-width: 1200px) {
+  .Stwo{
+    flex-direction: column-reverse !important; 
+  }
+  .Stwo img{
+   margin-left: 0 !important;
+  }
+  .Ttwo{
+    padding: 0 20px !important;
+  }
 }
