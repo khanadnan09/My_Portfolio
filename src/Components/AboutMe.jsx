@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import polygon from '../img/Polygon Luminary.svg'
 import Headin from './Headin'
+import Resume from '../img/Adnan Khan Resume.pdf'
 const AboutMe = () => {
     return (
         <AboutContainer id='about'>
@@ -20,7 +21,7 @@ const AboutMe = () => {
                 <DetailSection>
                     <div>Hello I'm <span>Adnan Khan</span> </div>
                     <ul>
-                        <li>I am a front-end developer builds the front-end portion of websites. I creates websites and applications using web languages such as HTML, CSS, and JavaScript that allow users to access and interact with the site also provides the power of React.js to build single page applications.</li>
+                        <li>I am a highly proficient front-end developer with a strong foundation in HTML, CSS and JavaScript, utilizing the latest web technologies to create responsive, interactive user interfaces. My expertise in React.js allows me to efficiently build dynamic, single page applications for seamless user experience.</li>
                         <li>Age : <span>21</span> </li>
                         <li>Country : <span>India</span> </li>
                         <li>Languages : <span>English,Hindi </span></li>
@@ -28,7 +29,7 @@ const AboutMe = () => {
                         <li>Full Time Job : <span>Available</span> </li>
                         <li>Skills : <span>HTML5 , CSS3 , JS , React.js ...</span> </li>
                         <li>Follow me on : <a href="/"><ion-icon name="logo-linkedin"></ion-icon></a><a target=" " href='https://github.com/khanadnan09'><ion-icon name="logo-github"></ion-icon></a></li>
-                        <li><button>Download Resume</button></li>
+                        <li><a href={Resume} download><button>Download Resume</button></a></li>
                     </ul>
                 </DetailSection>
             </AboutSection>
@@ -45,9 +46,6 @@ const AboutSection = styled.div`
    .polygon{
        height: 300px;
        opacity: 0.3 !important;
-       @media screen and (max-width: 480px) {
-        opacity: 0.7 !important;
-       }
    }
  }
 `
@@ -119,9 +117,7 @@ const DetailSection = styled.div`
    ul{
     list-style: none;
     margin:0 20px;
-    @media screen and (max-width: 992px) {
-     padding-left: 0;
-    }
+    padding-left: 0;
     li{
         font-size: 18px;
         color: #72E2AE;

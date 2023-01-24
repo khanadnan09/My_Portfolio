@@ -10,7 +10,7 @@ const ProjectCard = (props) => {
                 <span>{props.desc}</span>
                 <Buttons>
                     <a href={props.href} target=" ">View Demo</a>
-                    <a href='/' target=" ">Github <ion-icon name="logo-github" style={{ paddingLeft: "10px" }}></ion-icon></a>
+                    <a href={props.github} target=" ">Github <ion-icon name="logo-github" style={{ paddingLeft: "10px" }}></ion-icon></a>
                 </Buttons>
             </section>
         </Project>

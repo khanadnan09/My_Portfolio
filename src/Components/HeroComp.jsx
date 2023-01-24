@@ -7,9 +7,9 @@ const HeroComp = () => {
       <TextContainer>
         <TextWraper> Hello, I’m
           <span> Adnan Khan </span>
-          UI/UX Designer and Front-end Developer Based in India .
+          Skilled Front-end Developer from India, creating stunning websites.
         </TextWraper>
-        <span>I am a creative React Front-end Devloper.</span>
+        <span>Expertise in React and Front-end Development for creating interactive UI.</span>
         <ButtonContainer>
           <button>Contact Me</button>
           <a href="#projects">My Work</a>

@@ -21,47 +21,57 @@ const Projects = () => {
                 position: "relative",
                 top: "-30px",
                 fontSize: "20px"
-            }}>Here are my some projects , where i used HTML , CSS , JS and React Js.</div>
+            }}>My projects, expertly crafted with HTML, CSS, JavaScript, and React.</div>
             <ProjectsWrapper>
                 <ProjectCard img={disney}
                     name="Disney plus clone"
-                    desc="This is the Disney plus india clone using React , Firebase and Redux and Styled Components."
+                    desc="Experience the magic of Disney on my meticulously crafted clone of Disney Plus India, built using cutting-edge technologies such as React, Firebase, Redux and elegantly styled with Styled Components."
                     href="https://disney-plus-clone22.netlify.app/"
+                    github="https://github.com/khanadnan09/HostarCloneReact"
                 />
                 <ProjectCard img={Todo}
                     name="ToDo List App"
-                    desc="This is the ToDo List App using React with dark and light mode feature and many more."
-                    href="https://list22.netlify.app/"
+                    desc="Efficiently manage your tasks with my sleek ToDo App.
+                    Expertly built using React, it offers a seamless dark/light mode switch.
+                    Perfect for daily planning, grocery lists and work tracking.
+                    Elevate your productivity with my ToDo App"
+                    href="https://list22.netlify.app/" github="https://github.com/khanadnan09/ToDo-List-App"
                 />
                 <ProjectCard img={TV}
                     name="Tv App"
-                    desc="This is the Tv App using React with Redux."
+                    desc="Unlock the world of television with my feature-packed TV App, masterfully built using React and Redux, and data from APIs. The powerful search function allows you to easily find and explore your favorite TV shows."
                     href="https://tvapp22.netlify.app/"
+                    github="https://github.com/khanadnan09/TvApp"
                 />
                 <ProjectCard img={whatsapp}
                     name="WhatsApp Web Clone"
-                    desc="This is the WhatsApp Web Clone using HTML , CSS , JS and BootStarp."
+                    desc="Experience the elegance of WhatsApp on the web with my beautifully designed clone of WhatsApp Web, expertly crafted using HTML, CSS, JavaScript, and Bootstrap for a stunning frontend interface. No backend technology used."
                     href="https://mywhatsappwebclone.netlify.app/"
+                    github="https://github.com/khanadnan09/WhatsApp-Web-Clone"
                 />
                 <ProjectCard img={Foodies}
                     name="Foodies"
-                    desc="This is the Food website using HTML , CSS , JS and BootStarp."
+                    desc="Savor the flavors of the world with my beautifully designed Food Website, expertly crafted using HTML, CSS, JavaScript, and Bootstrap for a seamless frontend experience. With no backend technology used."
                     href="https://foodies11.netlify.app/"
+                    github="https://github.com/khanadnan09/Food-website-template"
                 />
                 <ProjectCard img={WordGame}
                     name="WordGame"
-                    desc="This is the WordGame using pure HTML , CSS and JS."
+                    desc="Test your word prowess and improve your vocabulary with my visually stunning WordGame, expertly crafted using pure HTML, CSS, and JavaScript. The challenge is to find the correct word from the given scrambled words within a given time frame."
                     href="https://wordgame22.netlify.app/"
+                    github="https://github.com/khanadnan09/WordGame"
                 />
                 <ProjectCard img={MusicPlayer}
                     name="Music Player"
-                    desc="This is the Music Player using pure HTML , CSS and JS."
+                    desc="Unleash the power of music with my elegantly designed Music Player, expertly crafted using pure HTML, CSS, and JavaScript for a visually stunning and highly interactive listening experience."
                     href="https://music-player19.netlify.app/"
+                    github="https://github.com/khanadnan09/Music-Player"
                 />
                 <ProjectCard img={Dictionary}
                     name="Dictionary"
-                    desc="This is the Dictionary App using pure HTML , CSS and JS."
+                    desc="Expand your vocabulary and improve your language skills with my aesthetically pleasing Dictionary App, expertly crafted using pure HTML, CSS, and JavaScript for a visually stunning and interactive interface."
                     href="https://dictionary22.netlify.app/"
+                    github="https://github.com/khanadnan09/Dictionary"
                 />
             </ProjectsWrapper>
         </ProjectsContainer>

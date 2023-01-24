@@ -1,7 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-// import computer from '../img/computer.png'
-// import gif from '../img/gif1.gif'
 import Responsive from '../img/Responsive.svg'
 import hero2 from '../img/hero2.svg'
 const Service = () => {
@@ -10,14 +8,10 @@ const Service = () => {
             <ServiceContainer>
                 <TextConatiner>
                     <div>What I will Provide You ?</div>
-                    <span>I am a front-end developer builds the front-end portion of websites.I creates websites and applications using web languages such as HTML, CSS, and JavaScript that allow users to access and interact with the site also provides the power of React.js to build single page applications. </span>
-                    <span style={{ color: "#72e2ae", fontSize: "22px", fontWeight: "400px" }}>Responsive Web Design.</span>
-                    <span> Responsive Web Design is about using HTML and CSS to automatically resize, hide, shrink, or enlarge, a website, to make it look good on all devices (desktops, tablets, and phones).</span>
+                    <span>As a front-end developer, I specialize in creating visually appealing, user-centered websites and applications using web technologies such as HTML, CSS, JavaScript, and React.js. I implement  <span style={{ color: "#72e2ae", fontSize: "22px", fontWeight: "400px" }}>Responsive Web Design</span> principles, utilizing HTML and CSS to automatically adjust the layout and elements of the website to ensure optimal viewing experience across different devices and screen sizes, including desktops, tablets, and smartphones. I focus on building single page applications that provide seamless navigation and improve user engagement. </span>
                 </TextConatiner>
                 <ImageConatiner>
                     <img src={Responsive} alt="" />
-                    {/* <img src={computer} alt="" /> */}
-                    {/* <img src={gif} alt="" /> */}
                 </ImageConatiner>
             </ServiceContainer>
             <ServiceContainer className='Stwo'>
@@ -27,9 +21,9 @@ const Service = () => {
                     }} />
                 </ImageConatiner>
                 <TextConatiner className='Ttwo' style={{ padding: "0px 120px 0px 32px" }}>
-                    <div>I Worked with React Js.</div>
-                    <span>ReactJS is a JavaScript library for building user interfaces, maintained by Facebook and several individual developers/companies. It is a popular, open-source, front-end JavaScript library that is prominent in the web development domain, especially for single-page applications. It is widely used to create fast and interactive UI elements for web and mobile apps. </span>
-                    <span>As a front end developer working with React.js i'm responsible for designing and implementing UI components for web applications, providing clean code that’s also maintainable. </span>
+                    <div>Expertise in building React-based applications.</div>
+                    <span>As a front-end developer with extensive experience in building React-based applications, I possess a deep understanding of React.js and its ecosystem. My expertise in React includes proficiency in JSX, component lifecycle methods, Virtual DOM, state management, and more. I am well-versed in utilizing libraries and frameworks like Redux, React Router and Firebase to create efficient and maintainable code. I have experience in creating reusable components and implementing best practices in React development. Additionally, I am experienced in utilizing version control tools like Git and Github to manage and collaborate on code. </span>
+                    {/* <span>As a front end developer working with React.js i'm responsible for designing and implementing UI components for web applications, providing clean code that’s also maintainable. </span> */}
                 </TextConatiner>
             </ServiceContainer>
         </>
@@ -59,6 +53,9 @@ const TextConatiner = styled.div`
         margin-bottom: 17px;
         @media screen and (max-width: 550px) {
             font-size: 36px;
+       }
+        @media screen and (max-width: 490px) {
+            font-size: 29px;
        }
      }
      span{

@@ -7,6 +7,8 @@ import firebase from '../img/firebase.png'
 import Styled from '../img/styledComponent.png'
 import Redux from '../img/Redux.png'
 import Router from '../img/react-router.png'
+import Github from '../img/github.png'
+import Git from '../img/git.png'
 import Service from './Service'
 
 const Skill = () => {
@@ -34,15 +36,15 @@ const Skill = () => {
             </Bar>
           </Tech>
           <Tech>
-            <div><img src={bootstarp} alt="." />BootStrap<span style={{ marginLeft: "auto" }}>70%</span></div>
+            <div><img src={bootstarp} alt="." />BootStrap<span style={{ marginLeft: "auto" }}>80%</span></div>
             <Bar>
-              <span style={{ width: "70%" }}></span>
+              <span style={{ width: "80%" }}></span>
             </Bar>
           </Tech>
           <Tech>
-            <div><img src={Styled} alt="." />Styled Components<span style={{ marginLeft: "auto" }}>70%</span></div>
+            <div><img src={Styled} alt="." />Styled Components<span style={{ marginLeft: "auto" }}>80%</span></div>
             <Bar>
-              <span style={{ width: "70%" }}></span>
+              <span style={{ width: "80%" }}></span>
             </Bar>
           </Tech>
           <Tech>
@@ -55,6 +57,18 @@ const Skill = () => {
             <div><img src={firebase} alt="." />Firebase<span style={{ marginLeft: "auto" }}>40%</span></div>
             <Bar>
               <span style={{ width: "40%" }}></span>
+            </Bar>
+          </Tech>
+          <Tech>
+            <div><img src={Github} alt="." />GitHub <span style={{ marginLeft: "auto" }}>80%</span></div>
+            <Bar>
+              <span style={{ width: "80%" }}></span>
+            </Bar>
+          </Tech>
+          <Tech>
+            <div><img src={Git} alt="." />Git<span style={{ marginLeft: "auto" }}>80%</span></div>
+            <Bar>
+              <span style={{ width: "80%" }}></span>
             </Bar>
           </Tech>
         </Technologies>
@@ -79,13 +93,13 @@ const Tech = styled.div`
     display: flex;
     align-items: center;
     color: #fff;
+    margin-bottom: 10px;
    }
  img{
     height: 30px;
     width: 30px;
     object-fit: contain;
     margin-right: 10px;
-    margin-bottom: 10px;
  }
 `
 const Bar = styled.div`
@@ -122,23 +136,30 @@ const Language = styled.div`
     flex-direction: column;
     align-items: center;
     font-weight: 500; 
-    box-shadow: 2px 2px 2px #000;
     @media screen and (max-width: 480px) {
          padding: 20px;
        }
    @keyframes water-wave {
           0% {
-            border-radius: 56% 44% 70% 30% / 30% 54% 46% 70%;
-            box-shadow: 2px 2px 2px #000;
+            border-radius: 89% 74% 74% 106% / 41% 61% 51% 101%;
+    box-shadow: 2px 2px 0px 5px #000;
+          }
+          25% {
+            border-radius: 30% 77% 40% 55% / 50% 30% 70% 48%;
+    box-shadow: 6px 5px 0px 11px #030a1a;
           }
           50% {
             border-radius: 3% 97% 15% 85% / 72% 0% 100% 28%;
-            box-shadow: 6px 5px 0px 11px #030a1a;
+    box-shadow: 6px 5px 0px 11px #030a1a;
+          }
+          75% {
+            border-radius: 47% 64% 52% 100% / 56% 40% 68% 52%;
+    box-shadow: 2px 2px 0px 5px #000;
           }
           100% {
-            border-radius: 56% 44% 70% 30% / 30% 54% 46% 70%;
-            box-shadow: 2px 2px 0px 5px #000;
-           }
+            border-radius: 89% 74% 74% 106% / 41% 61% 51% 101%;
+    box-shadow: 2px 2px 0px 5px #000;
+          }
           }
     ion-icon{
         height: 100px;
