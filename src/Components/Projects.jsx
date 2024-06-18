@@ -9,6 +9,8 @@ import Foodies from '../img/Foodies.jpeg'
 import WordGame from '../img/WordGame.jpeg'
 import MusicPlayer from '../img/MusicPlayer.jpeg'
 import Dictionary from '../img/Dictionary.jpeg'
+import chatApp from '../img/chat-app.jpeg'
+import blogApp from '../img/blog-app.jpeg'
 import ProjectCard from './ProjectCard'
 
 const Projects = () => {
@@ -23,11 +25,23 @@ const Projects = () => {
                 fontSize: "20px"
             }}>My projects, expertly crafted with HTML, CSS, JavaScript, and React.</div>
             <ProjectsWrapper>
+                <ProjectCard img={chatApp}
+                    name="Your Ultimate Chat Experience"
+                    desc="Embark on a transformative chat experience powered by Firebase, Redux, and React Router. Enjoy secure login, real-time messaging, and seamless navigation. Share text, images, videos, and more effortlessly, ensuring a dynamic and engaging communication platform."
+                    href="https://chat-app-23.netlify.app/"
+                    github="https://github.com/khanadnan09/Chat-app"
+                />
                 <ProjectCard img={disney}
                     name="Disney plus clone"
                     desc="Experience the magic of Disney on my meticulously crafted clone of Disney Plus India, built using cutting-edge technologies such as React, Firebase, Redux and elegantly styled with Styled Components."
                     href="https://disney-plus-clone22.netlify.app/"
                     github="https://github.com/khanadnan09/HostarCloneReact"
+                />
+                <ProjectCard img={blogApp}
+                    name="Explore and Share Your Thoughts"
+                    desc="Discover a dynamic blogging platform enhanced by Firebase, Redux, React Router, TinyMCE, empowering seamless login, intuitive content creation with TinyMCE, efficient form handling via React Hook Form."
+                    href="https://blog-app-2024.netlify.app/"
+                    github="https://github.com/khanadnan09/Blog-app-24"
                 />
                 <ProjectCard img={Todo}
                     name="ToDo List App"
