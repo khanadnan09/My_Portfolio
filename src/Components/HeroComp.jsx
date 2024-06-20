@@ -1,21 +1,31 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import styled, { keyframes } from 'styled-components';
 import hero from '../img/Hero.svg';
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const HeroComp = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 2000,
+      easing: "ease-out-cubic",
+    });
+  }, []);
   return (
     <HeroContainer id='home'>
       <TextContainer>
-        <TextWrapper>
+        <TextWrapper data-aos="fade-right">
           Hello, I’m <span>Adnan Khan</span>, a skilled Front-end Developer from India, creating stunning websites.
         </TextWrapper>
-        <span>Expertise in React and Front-end Development for creating interactive UI.</span>
-        <ButtonContainer>
-          <button>Contact Me</button>
+        <span data-aos="fade-up"
+          data-aos-duration="2000">Expertise in React and Front-end Development for creating interactive UI.</span>
+        <ButtonContainer data-aos="fade-up"
+          data-aos-duration="2000">
+          <a href='https://www.linkedin.com/in/adnan-khan-b40b5a30a/'>Contact Me</a>
           <a href="#projects">My Work</a>
         </ButtonContainer>
       </TextContainer>
-      <ImageContainer>
+      <ImageContainer data-aos="fade-down" data-aos-duration="2000">
         <img src={hero} alt="img" />
       </ImageContainer>
       <FloatingIcons>
@@ -35,6 +45,7 @@ const HeroComp = () => {
           <ion-icon name="logo-github"></ion-icon>
         </IconWrapper>
       </FloatingIcons>
+
     </HeroContainer>
   )
 }
@@ -107,8 +118,7 @@ const TextContainer = styled.div`
   ::after {
     content: "";
     position: absolute;
-    height: 44%;
-    top: 25%;
+    height: 80%;
     width: 50%;
     z-index: -1;
     background-color: #1B222E;
@@ -150,7 +160,7 @@ const TextWrapper = styled.div`
 
 const ButtonContainer = styled.div`
   margin-top: 20px;
-  button {
+  a:nth-child(1) {
     background-color: #72E2AE;
     border: none;
     margin-right: 20px;

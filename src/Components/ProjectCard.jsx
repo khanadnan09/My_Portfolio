@@ -1,9 +1,17 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import styled from 'styled-components'
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const ProjectCard = (props) => {
+    useEffect(() => {
+        AOS.init({
+          duration: 700,
+          easing: "ease-out-cubic",
+        });
+      }, []);
     return (
-        <Project>
+        <Project data-aos="zoom-in">
             <div><img src={props.img} alt="/" /></div>
             <section>
                 <span>{props.name}</span>

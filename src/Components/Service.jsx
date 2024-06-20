@@ -1,26 +1,35 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import styled from 'styled-components'
 import Responsive from '../img/Responsive.svg'
 import hero2 from '../img/hero2.svg'
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 const Service = () => {
+    useEffect(() => {
+        AOS.init({
+          duration: 700,
+          easing: "ease-out-cubic",
+        });
+      }, []);
     return (
         <>
             <ServiceContainer>
-                <TextConatiner>
+                <TextConatiner data-aos="fade-right">
                     <div>What I will Provide You ?</div>
                     <span>As a front-end developer, I specialize in creating visually appealing, user-centered websites and applications using web technologies such as HTML, CSS, JavaScript, and React.js. I implement  <span style={{ color: "#72e2ae", fontSize: "22px", fontWeight: "400px" }}>Responsive Web Design</span> principles, utilizing HTML and CSS to automatically adjust the layout and elements of the website to ensure optimal viewing experience across different devices and screen sizes, including desktops, tablets, and smartphones. I focus on building single page applications that provide seamless navigation and improve user engagement. </span>
                 </TextConatiner>
-                <ImageConatiner>
+                <ImageConatiner data-aos="fade-left">
                     <img src={Responsive} alt="" />
                 </ImageConatiner>
             </ServiceContainer>
             <ServiceContainer className='Stwo'>
-                <ImageConatiner>
+                <ImageConatiner data-aos="fade-right">
                     <img src={hero2} alt="." style={{
                         marginLeft: "82px"
                     }} />
                 </ImageConatiner>
-                <TextConatiner className='Ttwo' style={{ padding: "0px 120px 0px 32px" }}>
+                <TextConatiner data-aos="fade-left" className='Ttwo' style={{ padding: "0px 120px 0px 32px" }}>
                     <div>Expertise in building React-based applications.</div>
                     <span>As a front-end developer with extensive experience in building React-based applications, I possess a deep understanding of React.js and its ecosystem. My expertise in React includes proficiency in JSX, component lifecycle methods, Virtual DOM, state management, and more. I am well-versed in utilizing libraries and frameworks like Redux, React Router and Firebase to create efficient and maintainable code. I have experience in creating reusable components and implementing best practices in React development. Additionally, I am experienced in utilizing version control tools like Git and Github to manage and collaborate on code. </span>
                     {/* <span>As a front end developer working with React.js i'm responsible for designing and implementing UI components for web applications, providing clean code that’s also maintainable. </span> */}

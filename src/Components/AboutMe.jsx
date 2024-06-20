@@ -1,24 +1,35 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import styled from 'styled-components'
 import polygon from '../img/Polygon Luminary.svg'
 import Headin from './Headin'
-import Resume from '../img/Adnan Khan Resume.pdf'
+import Resume from '../img/Adnan_Frontend_Dev_Resume.pdf'
+import myPic from '../img/myPic.png'
+import AOS from "aos";
+import "aos/dist/aos.css";
 const AboutMe = () => {
+    useEffect(() => {
+        AOS.init({
+            duration: 700,
+            easing: "ease-out-cubic",
+        });
+    }, []);
     return (
         <AboutContainer id='about'>
-            <Headin title="About Me"/>
+            <Headin title="About Me" />
             <AboutSection>
                 <img className='polygon' src={polygon} alt="."
                     style={{
                         position: "absolute",
                         opacity: ".1",
                         width: "100%",
-                        pointerEvents:"none"
+                        pointerEvents: "none"
                     }} />
-                <ImageSection>
-                    <img src="https://images.unsplash.com/photo-1519058082700-08a0b56da9b4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt="" />
+                <ImageSection data-aos="fade-right"
+                    data-aos-easing="ease-in-sine">
+                    <img src={myPic} alt="" />
                 </ImageSection>
-                <DetailSection>
+                <DetailSection data-aos="fade-left"
+                    data-aos-easing="ease-in-sine">
                     <div>Hello I'm <span>Adnan Khan</span> </div>
                     <ul>
                         <li>I am a highly proficient front-end developer with a strong foundation in HTML, CSS and JavaScript, utilizing the latest web technologies to create responsive, interactive user interfaces. My expertise in React.js allows me to efficiently build dynamic, single page applications for seamless user experience.</li>
@@ -28,7 +39,7 @@ const AboutMe = () => {
                         <li>Freelance : <span>Available</span> </li>
                         <li>Full Time Job : <span>Available</span> </li>
                         <li>Skills : <span>HTML5 , CSS3 , JS , React.js ...</span> </li>
-                        <li>Follow me on : <a href="/"><ion-icon name="logo-linkedin"></ion-icon></a><a target=" " href='https://github.com/khanadnan09'><ion-icon name="logo-github"></ion-icon></a></li>
+                        <li>Follow me on : <a href="https://www.linkedin.com/in/adnan-khan-b40b5a30a/"><ion-icon name="logo-linkedin"></ion-icon></a><a target=" " href='https://github.com/khanadnan09'><ion-icon name="logo-github"></ion-icon></a></li>
                         <li><a href={Resume} download><button>Download Resume</button></a></li>
                     </ul>
                 </DetailSection>
@@ -53,13 +64,14 @@ const ImageSection = styled.div`
    display: flex;
    justify-content: center;
    position: relative;
+   display: flex;
+    align-items: center;
     img{
-    width: 400px;
-    height: 500px;
-    min-width: 280px;
-    padding: 20px;
-    border-bottom: 10px solid #72e2ae;
-    border-right: 10px solid #72e2ae; 
+        padding: 15px;
+         width: 500px;
+         height: 500px;
+         min-width: 280px;
+         border: 7px solid #1b222e;
     @media screen and (max-width: 992px) {
         height: auto;
        }

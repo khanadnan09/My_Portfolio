@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import styled from 'styled-components'
 import Headin from './Headin'
 import bootstarp from '../img/bootstarp.png'
@@ -9,63 +9,78 @@ import Redux from '../img/Redux.png'
 import Router from '../img/react-router.png'
 import Github from '../img/github.png'
 import Git from '../img/git.png'
+import reactHookForm from '../img/react-hook-form.png'
 import Service from './Service'
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Skill = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 700,
+      easing: "ease-out-cubic",
+    });
+  }, []);
   return (
     <>
       <SkillConatiner id='skills'>
         <Headin title="Skills & Technologies" />
-        <LanguageContainer>
+        <LanguageContainer data-aos="zoom-in">
           <Language><ion-icon name="logo-html5"></ion-icon>HTML5</Language>
           <Language><ion-icon name="logo-css3"></ion-icon>CSS3</Language>
           <Language><ion-icon name="logo-javascript"></ion-icon>JavaScript</Language>
           <Language><ion-icon name="logo-react"></ion-icon>React.Js</Language>
         </LanguageContainer>
         <Technologies>
-          <Tech>
+          <Tech data-aos="fade-up">
             <div><img src={Redux} alt="." />Redux<span style={{ marginLeft: "auto" }}>50%</span></div>
             <Bar>
               <span style={{ width: "50%" }}></span>
             </Bar>
           </Tech>
-          <Tech>
+          <Tech data-aos="fade-up">
             <div><img src={Router} alt="." />React-Router<span style={{ marginLeft: "auto" }}>60%</span></div>
             <Bar>
               <span style={{ width: "60%" }}></span>
             </Bar>
           </Tech>
-          <Tech>
+          <Tech data-aos="fade-up">
+            <div><img src={reactHookForm} alt="." />React Hook Form<span style={{ marginLeft: "auto" }}>60%</span></div>
+            <Bar>
+              <span style={{ width: "60%" }}></span>
+            </Bar>
+          </Tech>
+          <Tech data-aos="fade-up">
             <div><img src={bootstarp} alt="." />BootStrap<span style={{ marginLeft: "auto" }}>80%</span></div>
             <Bar>
               <span style={{ width: "80%" }}></span>
             </Bar>
           </Tech>
-          <Tech>
+          <Tech data-aos="fade-up">
             <div><img src={Styled} alt="." />Styled Components<span style={{ marginLeft: "auto" }}>80%</span></div>
             <Bar>
               <span style={{ width: "80%" }}></span>
             </Bar>
           </Tech>
-          <Tech>
+          <Tech data-aos="fade-up">
             <div><img src={figma} alt="." />Figma<span style={{ marginLeft: "auto" }}>50%</span></div>
             <Bar>
               <span style={{ width: "50%" }}></span>
             </Bar>
           </Tech>
-          <Tech>
+          <Tech data-aos="fade-up">
             <div><img src={firebase} alt="." />Firebase<span style={{ marginLeft: "auto" }}>40%</span></div>
             <Bar>
-              <span style={{ width: "40%" }}></span>
+              <span style={{ width: "50%" }}></span>
             </Bar>
           </Tech>
-          <Tech>
+          <Tech data-aos="fade-up">
             <div><img src={Github} alt="." />GitHub <span style={{ marginLeft: "auto" }}>80%</span></div>
             <Bar>
               <span style={{ width: "80%" }}></span>
             </Bar>
           </Tech>
-          <Tech>
+          <Tech data-aos="fade-up">
             <div><img src={Git} alt="." />Git<span style={{ marginLeft: "auto" }}>80%</span></div>
             <Bar>
               <span style={{ width: "80%" }}></span>
