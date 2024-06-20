@@ -3,10 +3,10 @@ import styled from 'styled-components'
 import logo from '../img/logo.png'
 const NavBar = () => {
     const [closeNavBar, setCloseNavBar] = React.useState(false)
-    const closeNav = ()=>{
+    const closeNav = () => {
         setCloseNavBar(false)
     }
-    const openNav = ()=>{
+    const openNav = () => {
         setCloseNavBar(true)
     }
     return (
@@ -15,7 +15,7 @@ const NavBar = () => {
                 <img src={logo} alt="" />
             </Logo>
             <Menu className='MenuIcon' onClick={openNav}><ion-icon name="menu-outline"></ion-icon></Menu>
-            <NavLinks id="list-example"style={{left: closeNavBar ? "0":"-100%"}}>
+            <NavLinks id="list-example" style={{ left: closeNavBar ? "0" : "-100%" }}>
                 <a href="#home" onClick={closeNav}>Home</a>
                 <a href="#about" onClick={closeNav}>About Me</a>
                 <a href="#skills" onClick={closeNav}>Skills</a>
@@ -39,7 +39,9 @@ const Menu = styled.div`
 const Nav = styled.div`
   display: flex;
   height: 66px;
-  background-color: #1D2430;
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: #1d2430cc;
   position: sticky;
   top: 0;
   z-index: 99;
