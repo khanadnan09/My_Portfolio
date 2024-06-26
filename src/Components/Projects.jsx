@@ -60,7 +60,7 @@ const Projects = () => {
                 <ProjectCard img={whatsapp}
                     name="WhatsApp Web Clone"
                     desc="Experience the elegance of WhatsApp on the web with my beautifully designed clone of WhatsApp Web, expertly crafted using HTML, CSS, JavaScript, and Bootstrap for a stunning frontend interface. No backend technology used."
-                    href="https://mywhatsappwebclone.netlify.app/"
+                    href="https://khanadnan09.github.io/WhatsApp-Web-Clone/"
                     github="https://github.com/khanadnan09/WhatsApp-Web-Clone"
                 />
                 <ProjectCard img={Foodies}
@@ -78,7 +78,7 @@ const Projects = () => {
                 <ProjectCard img={MusicPlayer}
                     name="Music Player"
                     desc="Unleash the power of music with my elegantly designed Music Player, expertly crafted using pure HTML, CSS, and JavaScript for a visually stunning and highly interactive listening experience."
-                    href="https://music-player19.netlify.app/"
+                    href="https://khanadnan09.github.io/Music_player_24/"
                     github="https://github.com/khanadnan09/Music-Player"
                 />
                 <ProjectCard img={Dictionary}

@@ -41,6 +41,7 @@ const Service = () => {
 const ServiceContainer = styled.div`
     display: flex;
     margin-bottom: 100px;
+    overflow-x: hidden;
     align-items:center ;
     @media screen and (max-width: 1200px) {
         flex-direction: column;

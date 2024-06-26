@@ -47,7 +47,9 @@ const AboutMe = () => {
         </AboutContainer>
     )
 }
-const AboutContainer = styled.div``
+const AboutContainer = styled.div`
+     overflow-x: hidden;
+`
 const AboutSection = styled.div`
   display: flex;
   justify-content: space-evenly;
