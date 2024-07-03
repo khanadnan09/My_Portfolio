@@ -40,7 +40,7 @@ const AboutMe = () => {
                         <li>Full Time Job : <span>Available</span> </li>
                         <li>Skills : <span>HTML5 , CSS3 , JS , React.js ...</span> </li>
                         <li>Follow me on : <a href="https://www.linkedin.com/in/adnan-khan-b40b5a30a/"><ion-icon name="logo-linkedin"></ion-icon></a><a target=" " href='https://github.com/khanadnan09'><ion-icon name="logo-github"></ion-icon></a></li>
-                        <li><a href={Resume} download><button>Download Resume</button></a></li>
+                        <li><a href={Resume} download="Adnan_Frontend_Dev_Resume.pdf"><button>Download Resume</button></a></li>
                     </ul>
                 </DetailSection>
             </AboutSection>
