@@ -21,7 +21,7 @@ const HeroComp = () => {
           data-aos-duration="2000">Expertise in React and Front-end Development for creating interactive UI.</span>
         <ButtonContainer data-aos="fade-up"
           data-aos-duration="2000">
-          <a href='https://www.linkedin.com/in/adnan-khan-b40b5a30a/'>Contact Me</a>
+          <a href='https://www.linkedin.com/in/adnan-khan-frontend'>Contact Me</a>
           <a href="#projects">My Work</a>
         </ButtonContainer>
       </TextContainer>
