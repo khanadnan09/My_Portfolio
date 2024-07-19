@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import styled, { keyframes } from 'styled-components';
-import hero from '../img/Hero.svg';
+import hero from '../img/hero-svg.svg';
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -13,14 +13,12 @@ const HeroComp = () => {
   }, []);
   return (
     <HeroContainer id='home'>
-      <TextContainer>
-        <TextWrapper data-aos="fade-right">
+      <TextContainer data-aos="fade-up" data-aos-anchor-placement="top-bottom" >
+        <TextWrapper>
           Hello, I’m <span>Adnan Khan</span>, a skilled Front-end Developer from India, creating stunning websites.
         </TextWrapper>
-        <span data-aos="fade-up"
-          data-aos-duration="2000">Expertise in React and Front-end Development for creating interactive UI.</span>
-        <ButtonContainer data-aos="fade-up"
-          data-aos-duration="2000">
+        <span>Expertise in React and Front-end Development for creating interactive UI.</span>
+        <ButtonContainer>
           <a href='https://www.linkedin.com/in/adnan-khan-frontend'>Contact Me</a>
           <a href="#projects">My Work</a>
         </ButtonContainer>
@@ -65,7 +63,7 @@ const floatAnimation = keyframes`
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-10px);
+    transform: translateY(-14px);
   }
   100% {
     transform: translateY(0);
@@ -125,6 +123,11 @@ const TextContainer = styled.div`
     border-radius: 0px 67% 67% 0px;
     left: 0%;
     animation: float 6s ease-in-out infinite;
+  }
+  @media screen and (max-width: 420px) {
+    ::after {
+      height: 55%;
+    }
   }
   @keyframes float {
     0% {
@@ -207,12 +210,13 @@ const ImageContainer = styled.div`
   }
   @media screen and (max-width: 420px) {
     max-height: 320px;
+    margin-top: 34px;
   }
   img {
     height: inherit;
-    max-height: 400px;
+    max-height: 500px;
     width: 100%;
-    animation: floating 4s ease-in-out infinite;
+    /* animation: floating 4s ease-in-out infinite; */
   }
   @keyframes floating {
     0% {

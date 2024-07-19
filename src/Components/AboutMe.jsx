@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import polygon from '../img/Polygon Luminary.svg'
 import Headin from './Headin'
 import Resume from '../img/Adnan_Frontend_Dev_Resume.pdf'
-import myPic from '../img/myPic.png'
+import myPic from '../img/profile.jpg'
 import AOS from "aos";
 import "aos/dist/aos.css";
 const AboutMe = () => {
@@ -70,6 +70,7 @@ const ImageSection = styled.div`
     align-items: center;
     img{
         padding: 15px;
+        padding-bottom: 0px;
          width: 500px;
          height: 500px;
          min-width: 280px;
